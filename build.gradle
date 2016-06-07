@@ -44,6 +44,7 @@ dependencies {
 	compile 'com.sun.jersey.contribs:jersey-spring:1.8'
 	compile 'com.sun.jersey:jersey-core:1.8'
 	compile 'com.sun.jersey:jersey-server:1.8'
+	compile 'com.sun.jersey:jersey-json:1.8'
 	
 	def tomcatVersion = '7.0.50'
 	
@@ -87,6 +88,7 @@ sourceSets {
 			java {
 				srcDir 'Base/src/main/java'
 				srcDir 'Rest.Services/src/main/java'
+				srcDir 'Rest.Schema/src/main/java'
 			}
 		}
 		test {

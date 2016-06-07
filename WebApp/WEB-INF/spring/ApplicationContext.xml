@@ -9,5 +9,6 @@
 	<context:component-scan base-package="com.chathan.famstack.rest.services" />
 	
 	<bean id="userProfileManager" class="com.chathan.famstack.manager.profile.UserProfileManager" />
+	<bean id="objectFactory" class="com.chathan.xsd.profileservices.ObjectFactory" />
  
 </beans>
