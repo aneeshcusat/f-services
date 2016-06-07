@@ -55,9 +55,9 @@ dependencies {
 	}
 	
 	testCompile(
-            'junit:junit:4.12',
-            'org.codehaus.groovy:groovy-all:2.4.4',
-            'org.spockframework:spock-core:1.0-groovy-2.4',
+            'junit:junit:4.10',
+            'org.codehaus.groovy:groovy-all:1.8.6',
+            'org.spockframework:spock-core:0.7-groovy-1.8',
     )
     
     testRuntime(
@@ -89,6 +89,12 @@ sourceSets {
 				srcDir 'Rest.Services/src/main/java'
 			}
 		}
+		test {
+    		groovy {
+      			srcDir 'Base/src/test/groovy'
+      			srcDir 'Rest.Services/src/test/groovy'
+   			}
+  		}
 	}
 
 // context where tomcat is deployed, by defautl localhost:8080/
