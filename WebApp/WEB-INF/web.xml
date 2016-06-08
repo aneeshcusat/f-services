@@ -39,9 +39,18 @@
 	</init-param>
     <load-on-startup>1</load-on-startup>
   </servlet>
+    <servlet>
+    <servlet-name>FamStack-Admin-Servlet</servlet-name>
+    <servlet-class>com.chathan.famstack.servlet.admin.AdminServlet</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
   <servlet-mapping>
     <servlet-name>FamStack-Servlet</servlet-name>
     <url-pattern>/rest/*</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FamStack-Admin-Servlet</servlet-name>
+    <url-pattern>/admin/*</url-pattern>
   </servlet-mapping>
   <!--  <filter>
     <filter-name>AuthenticationFilter</filter-name>

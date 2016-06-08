@@ -12,6 +12,9 @@ OR
 if gradle is installed and configured run below the command.
 >gradle clean build war tomcatRun 
 
+Eclipse configure
+---------------
+>gradle eclipse or gradlew eclipse
 
 Test
 ----
