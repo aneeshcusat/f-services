@@ -6,6 +6,7 @@ apply plugin: 'com.bmuschko.tomcat'
 apply plugin: 'groovy'
 apply plugin: 'eclipse'
 apply plugin: "com.lv.dbdeploy"
+apply plugin: 'pmd'
 
 // JDK version source compatibility
 sourceCompatibility = 1.7
@@ -97,6 +98,7 @@ task explodedWar(type: Copy) {
 war.dependsOn explodedWar
 
 build.dependsOn update
+build.dependsOn pmdMain
 
 // Set source directory
 sourceSets {
@@ -149,4 +151,14 @@ sourceSets {
 		println "output.files = ${output.files}"
 		}
 	}
+}
+
+compileTestJava {
+	enabled = false
+}
+processTestResources {
+	enabled = false
+}
+pmdTest {
+	enabled = false
 }

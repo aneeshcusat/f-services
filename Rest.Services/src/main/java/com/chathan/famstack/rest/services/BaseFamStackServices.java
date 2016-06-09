@@ -5,34 +5,36 @@ import org.apache.logging.log4j.Logger;
 
 public class BaseFamStackServices {
 	
-	private static final Logger logger = LogManager.getLogger();
+	public static Logger logger = null;
 	
 	public void logDebug(String message) {
-		logger.debug(message);
+		getLogger().debug(message);
 	}
 	
 	public void logInfo(String message) {
-		logger.info(message);
+		getLogger().info(message);
 	}
 	
 	public void logError(String message) {
-		logger.error(message);
+		getLogger().error(message);
 	}
 
 	public void logTrace(String message) {
-		logger.trace(message);
+		getLogger().trace(message);
 	}
 	
 	public boolean isLogDebugEnabled() {
-		return logger.isDebugEnabled();
+		return getLogger().isDebugEnabled();
 	}
 	
 	public boolean isLogInfoEnabled() {
-		return logger.isInfoEnabled();
+		return getLogger().isInfoEnabled();
 	}
 	
 	public Logger getLogger() {
+		if (logger == null) {
+			logger = LogManager.getLogger(this.getClass());
+		}
 		return logger;
 	}
-
 }
