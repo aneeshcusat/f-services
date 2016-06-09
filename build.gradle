@@ -59,6 +59,8 @@ dependencies {
     
     compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.6'
   	compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.6'
+  	compile group: 'com.lmax', name: 'disruptor', version: '3.3.4'
+	compile group: 'org.apache.logging.log4j', name: 'log4j-web', version: '2.6'
 	
 	def tomcatVersion = '7.0.50'
 	
@@ -104,6 +106,9 @@ sourceSets {
 				srcDir 'Rest.Services/src/main/java'
 				srcDir 'Rest.Schema/src/main/java'
 			}
+			resources {
+				srcDir 'Base/src/main/resources'
+			}
 		}
 		test {
     		groovy {
@@ -111,6 +116,7 @@ sourceSets {
       			srcDir 'Rest.Services/src/test/groovy'
    			}
   		}
+  		
 	}
 
 // context where tomcat is deployed, by defautl localhost:8080/

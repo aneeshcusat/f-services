@@ -12,7 +12,7 @@ import com.chathan.xsd.profileservices.UserProfile;
 
 @Component
 @Path("/relation")
-public class RelationShipServices extends FamStackServices {
+public class RelationShipServices extends BaseFamStackServices {
 	@GET
 	@Path("/createrelation")
 	@Consumes(MediaType.APPLICATION_JSON)

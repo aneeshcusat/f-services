@@ -16,7 +16,7 @@ import com.chathan.xsd.profileservices.UserProfile;
 
 @Component
 @Path("/user")
-public class LoginServices extends FamStackServices {
+public class LoginServices extends BaseRestFamStackService {
 
 	@Autowired
 	UserProfileManager userProfileManager;

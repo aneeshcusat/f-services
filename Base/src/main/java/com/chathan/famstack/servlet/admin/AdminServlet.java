@@ -13,7 +13,7 @@ import javax.ws.rs.Path;
 
 import org.reflections.Reflections;
 
-import com.chathan.famstack.rest.services.FamStackServices;
+import com.chathan.famstack.rest.services.BaseRestFamStackService;
 
 public class AdminServlet extends HttpServlet {
 
@@ -79,8 +79,8 @@ public class AdminServlet extends HttpServlet {
 		} else {
 		Reflections reflections = new Reflections("com.chathan");
 
-		Set<Class<? extends FamStackServices>> allClasses = reflections
-				.getSubTypesOf(FamStackServices.class);
+		Set<Class<? extends BaseRestFamStackService>> allClasses = reflections
+				.getSubTypesOf(BaseRestFamStackService.class);
 		
 		if (allClasses != null && !allClasses.isEmpty()) {
 			out.println("<body><h1>");
