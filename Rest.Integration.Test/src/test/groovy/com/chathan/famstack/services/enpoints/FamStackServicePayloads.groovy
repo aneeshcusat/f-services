@@ -7,7 +7,7 @@ class FamStackServicePayloads {
 	 return '''
 	 		{
 	 			"username":"''' + username +'''",
-	 			"password":"''' + password +'''",
+	 			"password":"''' + password +'''"
 	 		}'''
  }
  
