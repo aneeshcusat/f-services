@@ -16,7 +16,7 @@ public class UserProfileManager extends BaseFamStackServices {
 	ObjectFactory objectFactory;
 	
 	@Autowired
-	FamStackEntityManager famStackEntityManager;
+	FamStackEntityManager<UserEntity> famStackEntityManager;
 	
 	public String registerUser() {
 		return "user registered";
@@ -29,7 +29,7 @@ public class UserProfileManager extends BaseFamStackServices {
 	public UserProfile getUserDetails() {
 		
 		logDebug("Executing user profilermanager");
-		List<UserEntity> userEntity = famStackEntityManager.getAllUsers();
+		List<UserEntity> userEntity = famStackEntityManager.getAllUsers(UserEntity.class);
 		UserProfile userProfile = objectFactory.createUserProfile();
 		userProfile.setFirstName(userEntity.get(0).getFirstName());
 		userProfile.setLastName(userEntity.get(0).getLastName());

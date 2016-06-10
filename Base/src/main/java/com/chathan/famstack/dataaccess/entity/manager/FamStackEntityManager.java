@@ -8,17 +8,15 @@ import javax.persistence.PersistenceContext;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.chathan.famstack.dataaccess.entity.UserEntity;
-
 @Repository
 @Transactional
-public class FamStackEntityManager {
+public class FamStackEntityManager<T> {
 	@PersistenceContext
 	private EntityManager manager;
 	
-	public List<UserEntity> getAllUsers() 
+	public List<T> getAllUsers(Class<T> entity) 
 	{
-		List<UserEntity> users = manager.createQuery("Select a From UserEntity a", UserEntity.class).getResultList();
+		List<T> users = (List<T>) manager.createQuery("Select a From "+ entity.getSimpleName() +" a", entity).getResultList();
         return users;
 	}
 }
