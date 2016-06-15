@@ -5,6 +5,7 @@
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/Base/src/test"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/Rest.Services/src/main"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/Rest.Services/src/test"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/Base/src/main/resources"/>
         <property name="java-output-path" value="/FStack/build/classes"/>
         <property name="context-root" value="FStack"/>
     </wb-module>
