@@ -1,20 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="src" path="Base/src/main"/>
-	<classpathentry kind="src" path="Base/src/test"/>
-	<classpathentry kind="src" path="Rest.Services/src/main"/>
-	<classpathentry kind="src" path="Rest.Services/src/test"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.8.0_74">
-		<attributes>
-			<attribute name="owner.project.facets" value="java"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Apache Tomcat v7.0">
-		<attributes>
-			<attribute name="owner.project.facets" value="jst.web"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
-	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
-	<classpathentry kind="output" path="WebApp/WEB-INF/classes"/>
+	<classpathentry kind="src" path="Rest.Services/src/main/java"/>
+	<classpathentry kind="src" path="Base/src/main/java"/>
+	<classpathentry kind="src" path="Base/src/test/groovy"/>
+	<classpathentry kind="src" path="Rest.Services/src/test/groovy"/>
+	<classpathentry kind="src" path="Rest.Schema/src/main/java"/>
+	<classpathentry exported="true" kind="con" path="GROOVY_DSL_SUPPORT"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7/"/>
+	<classpathentry kind="lib" path="C:/Users/Aneeshkumar/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.21/139535a69a4239db087de9bab0bee568bf8e0b70/slf4j-api-1.7.21.jar" sourcepath="C:/Users/Aneeshkumar/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.21/f285ac123f201fb4b028bac556928d7cf527ef48/slf4j-api-1.7.21-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Aneeshkumar/.m2/repository/org/springframework/spring-asm/3.0.5.RELEASE/spring-asm-3.0.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Aneeshkumar/.m2/repository/org/springframework/spring-beans/3.0.5.RELEASE/spring-beans-3.0.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Aneeshkumar/.m2/repository/org/springframework/spring-context/3.0.5.RELEASE/spring-context-3.0.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Aneeshkumar/.m2/repository/org/springframework/spring-core/3.0.5.RELEASE/spring-core-3.0.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Aneeshkumar/.m2/repository/org/springframework/spring-expression/3.0.5.RELEASE/spring-expression-3.0.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Aneeshkumar/.m2/repository/org/springframework/spring-web/3.0.5.RELEASE/spring-web-3.0.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Aneeshkumar/.m2/repository/com/sun/jersey/contribs/jersey-spring/1.8/jersey-spring-1.8.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Aneeshkumar/.m2/repository/com/sun/jersey/jersey-core/1.8/jersey-core-1.8.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Aneeshkumar/.m2/repository/com/sun/jersey/jersey-server/1.8/jersey-server-1.8.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Aneeshkumar/.gradle/caches/modules-2/files-2.1/javax.servlet/servlet-api/2.5/5959582d97d8b61f4d154ca9e495aafd16726e34/servlet-api-2.5.jar" sourcepath="C:/Users/Aneeshkumar/.gradle/caches/modules-2/files-2.1/javax.servlet/servlet-api/2.5/21599814ad9a605b86f3e6381571beccd861a32/servlet-api-2.5-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Aneeshkumar/.gradle/caches/modules-2/files-2.1/com.athaydes/spock-reports/1.2.7/b2329ee6d792ce2c3ee8360f67e665a92fdba47f/spock-reports-1.2.7.jar" sourcepath="C:/Users/Aneeshkumar/.gradle/caches/modules-2/files-2.1/com.athaydes/spock-reports/1.2.7/fcdf21be506c283db0b86ef278948fb7e7bc316e/spock-reports-1.2.7-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Aneeshkumar/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Aneeshkumar/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Aneeshkumar/.m2/repository/asm/asm/3.1/asm-3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Aneeshkumar/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/3.0.5.RELEASE/c7a17803cc10512e26e285073639543f0c7c764/spring-aop-3.0.5.RELEASE.jar" sourcepath="C:/Users/Aneeshkumar/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/3.0.5.RELEASE/b3cb2378715a780add6fecf9d316fb899c153adb/spring-aop-3.0.5.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Aneeshkumar/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar" sourcepath="C:/Users/Aneeshkumar/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/1dc37250fbc78e23a65a67fbbaf71d2e9cbc3c0b/hamcrest-core-1.3-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Aneeshkumar/.gradle/caches/modules-2/files-2.1/junit/junit/4.10/e4f1766ce7404a08f45d859fb9c226fc9e41a861/junit-4.10.jar" sourcepath="C:/Users/Aneeshkumar/.gradle/caches/modules-2/files-2.1/junit/junit/4.10/6c98d6766e72d5575f96c9479d1c1d3b865c6e25/junit-4.10-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Aneeshkumar/.gradle/caches/modules-2/files-2.1/org.spockframework/spock-core/0.7-groovy-1.8/3a677d19e8d3acf3bd296c4023356256d55da5a3/spock-core-0.7-groovy-1.8.jar" sourcepath="C:/Users/Aneeshkumar/.gradle/caches/modules-2/files-2.1/org.spockframework/spock-core/0.7-groovy-1.8/4af8952e6bed87f15cf6a5077c85d1e45b68cb7f/spock-core-0.7-groovy-1.8-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Aneeshkumar/.gradle/caches/modules-2/files-2.1/junit/junit-dep/4.10/64417b3bafdecd366afa514bd5beeae6c1f85ece/junit-dep-4.10.jar" sourcepath="C:/Users/Aneeshkumar/.gradle/caches/modules-2/files-2.1/junit/junit-dep/4.10/2c7dad0a5eb1602c6fe6b43abec8ea35805b3ae4/junit-dep-4.10-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Aneeshkumar/.gradle/caches/modules-2/files-2.1/org.codehaus.groovy/groovy-all/1.8.8/98a489343d3c30da817d36cbea5de11ed07bef31/groovy-all-1.8.8.jar" sourcepath="C:/Users/Aneeshkumar/.gradle/caches/modules-2/files-2.1/org.codehaus.groovy/groovy-all/1.8.8/5f847ed18009f8a034bad3906e39f771c01728c1/groovy-all-1.8.8-sources.jar"/>
+	<classpathentry kind="output" path="bin"/>
 </classpath>

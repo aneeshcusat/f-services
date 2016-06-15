@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.4">
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+ <welcome-file-list>  
+   <welcome-file>index.html</welcome-file>  
+   <welcome-file>default.html</welcome-file>  
+ </welcome-file-list>  
   <display-name>Restful Web Application</display-name>
   <context-param>
     <param-name>context-root</param-name>
-    <param-value>/</param-value>
+    <param-value>/famstack</param-value>
   </context-param>
   <session-config>
     <session-timeout>30</session-timeout>
@@ -29,10 +33,31 @@
       <param-name>com.sun.jersey.config.property.packages</param-name>
       <param-value>com.chathan.famstack.rest.services</param-value>
     </init-param>
+    <init-param>
+		<param-name>com.sun.jersey.api.json.POJOMappingFeature</param-name>
+		<param-value>true</param-value>
+	</init-param>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+    <servlet>
+    <servlet-name>FamStack-Admin-Servlet</servlet-name>
+    <servlet-class>com.chathan.famstack.servlet.admin.AdminServlet</servlet-class>
     <load-on-startup>1</load-on-startup>
   </servlet>
   <servlet-mapping>
     <servlet-name>FamStack-Servlet</servlet-name>
     <url-pattern>/rest/*</url-pattern>
   </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FamStack-Admin-Servlet</servlet-name>
+    <url-pattern>/admin/*</url-pattern>
+  </servlet-mapping>
+  <!--  <filter>
+    <filter-name>AuthenticationFilter</filter-name>
+    <filter-class>com.chathan.famstack.filter.RestAuthenticationFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>AuthenticationFilter</filter-name>
+    <url-pattern>/rest/*</url-pattern>
+  </filter-mapping> -->
 </web-app>
